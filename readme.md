@@ -17,7 +17,7 @@ Due to the recent attacks agaist students at my university and the coincidence t
 
 ## Installation and Setup
 
-1. Clone the repository to your local machine using `git clone https://github.com/yourusername/android-rapid-response-system.git`
+1. Clone the repository to your local machine using `git clone https://github.com/lordskyzw/cutsafe.git`
 2. Open the project in Android Studio
 3. Build the project and run it on an Android device or emulator
 4. Modify the `sendLocationToServer()` method in the client code to implement the logic for getting the device's last known location and sending it to the server
