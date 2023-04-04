@@ -1,6 +1,6 @@
 # CUT-Safe Android Rapid Response System
 
-This is an app that allows users to send their device's last known location to a server for help in case of emergency or distress.
+Due to the recent attacks agaist students at my university and the coincidence that my class is OOP (using Java), This is an app born out of an assignment that allows users to send their device's last known location along with a person's medical details to a server for all forms of help in case of emergency or distress.
 
 ## Features
 
