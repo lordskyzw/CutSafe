@@ -1,0 +1,59 @@
+import java.io.*;
+import java.net.*;
+
+public class RapidResponseSystem {
+    private static final String SERVER_URL = "http://example.com/api/location"; // Replace with your server URL
+    private static final String DEVICE_ID = "ABC123"; // Replace with your device ID
+    
+    public static void main(String[] args) {
+        try {
+            // Get device's last known location
+            String location = getLastKnownLocation();
+            
+            // Send location to server
+            sendLocationToServer(location);
+        } catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+    
+    private static String getLastKnownLocation() {
+        // Implement code to get device's last known location here
+        // For example, you could use the GPS or network location services
+        return "123.456,-78.901"; // Return a string in the format "latitude,longitude"
+    }
+    
+    private static void sendLocationToServer(String location) throws IOException {
+        URL url = new URL(SERVER_URL);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("POST");
+        conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+        conn.setRequestProperty("Accept", "application/json");
+        conn.setDoOutput(true);
+        
+        // Create JSON payload
+        String payload = String.format("{\"deviceId\":\"%s\",\"location\":\"%s\"}", DEVICE_ID, location);
+        
+        // Send payload to server
+        try (OutputStream os = conn.getOutputStream()) {
+            byte[] input = payload.getBytes("utf-8");
+            os.write(input, 0, input.length);           
+        }
+        
+        // Check response status code
+        int statusCode = conn.getResponseCode();
+        if (statusCode != 200) {
+            throw new RuntimeException("Failed to send location to server: HTTP error code : " + statusCode);
+        }
+        
+        // Read response from server
+        try (BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())))) {
+            String output;
+            while ((output = br.readLine()) != null) {
+                System.out.println(output);
+            }
+        }
+        
+        conn.disconnect();
+    }
+}
