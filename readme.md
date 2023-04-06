@@ -46,4 +46,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgements
 
-This project was inspired by the rise of robberies (especially now that they occured to those close to me) which students are facing as they move on and around the campus. This calls for the need for a rapid response system in emergency situations. Thanks to my group members for the support(snark sarcasm - I work alone).
+This project was inspired by the rise of robberies (especially now that they occured to those close to me) which students are facing as they move on and around the campus. This calls for the need for a rapid response system in emergency situations. Thanks to my group members for the support.
