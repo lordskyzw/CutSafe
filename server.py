@@ -1,4 +1,8 @@
 from flask import Flask, request
+import sqlite3
+
+conn = sqlite3.connect("cutsafe.db")
+c = conn.cursor()
 
 app = Flask(__name__)
 
@@ -18,4 +22,4 @@ if __name__ == "__main__":
 
 
 ##Summary:
-###we created a webhook which receives location data as a json file
+###we created a webhook which receives location data as a json file via an HTTP Post call to its endpoint.
