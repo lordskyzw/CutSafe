@@ -1,0 +1,31 @@
+
+Interviewer: Hello, thank you for joining me today. Can you please tell me your name and a little bit about yourself?
+
+Witness: Sure, my name is Jane and I'm a student at Chinhoyi University of Technology.
+
+Interviewer: I'm sorry to hear about what happened to you. Can you tell me more about the robbery incident near the engineering complex?
+
+Witness: Yes, it was around 1600hrs when I was ambushed by two men who demanded my electronic gadgets. I refused to give them and they ended up stabbing me.
+
+Interviewer: Oh no, that's terrible. Did you receive any immediate help or medical attention?
+
+Witness: It took some time for help to arrive. I had to wait for the university control to come to my aid. When they did arrive, they told me to get up and go to the clinic.
+
+Interviewer: That sounds like a difficult and uncomfortable situation. Have you had any thoughts on how this kind of situation could be handled better?
+
+Witness: Yes, I think that having a way to quickly alert authorities or emergency services would be helpful. It could save valuable time and potentially even prevent further harm.
+
+Interviewer: That's a great idea. Did you hear about the Rapid Response System project that my group is trying to implement at the university?
+
+Witness: No, I haven't. What is it?
+
+Interviewer: It's a system that allows individuals to quickly send their location to a server in case of an emergency. The server then alerts emergency services and provides them with the location of the individual in need.
+
+Witness: Wow, that sounds really helpful. I wish something like that had been available when I was attacked.
+
+Interviewer: Yes, it definitely has the potential to save lives and prevent harm. Thank you for sharing your experience and thoughts on this matter. I wish you all the best in your recovery.
+
+
+
+Summary:
+During the interview, the witness described a robbery that took place near the engineering complex of Chinhoyi University of Technology around 1600hrs. The victim was ambushed and the robbers demanded her electronic gadgets, but she refused and was subsequently stabbed. Although she did not die from the injuries, help from the university control took time to arrive. When help did arrive, the victim was told to get up and go to the clinic. The witness emphasized the need for a rapid response system that could alert authorities quickly in situations like these, potentially reducing response time and increasing the chances of a positive outcome for victims.

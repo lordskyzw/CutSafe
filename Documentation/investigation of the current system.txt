@@ -1,0 +1,9 @@
+Upon investigating the previous emergency response system at Chinhoyi University of Technology, it was found that there was no efficient and effective way for students, faculty or staff to notify the university control of an emergency. The only option available was to physically run to the nearest guard post, which is not a reliable way to handle emergencies, especially those that require immediate medical attention.
+
+This system had several weaknesses. Firstly, it relied heavily on the physical location of the victim or witness. In cases where the person in distress was far away from a guard post, the response time would be slow, and this could lead to severe consequences, such as injury or even death.
+
+Secondly, the previous system did not account for situations where a victim or witness was unable to move or speak due to injury, fear or other circumstances. This made it challenging for emergency services to locate and assist them.
+
+Furthermore, the system did not offer anonymity, which could be a problem in situations where individuals were afraid of retribution or victimization after reporting an emergency.
+
+In summary, the previous emergency response system at Chinhoyi University of Technology had several weaknesses that made it unreliable and ineffective in handling emergencies. A more efficient and effective system that addresses these shortcomings is necessary.

@@ -1,0 +1,27 @@
++--------------------------------------------------------------------------------------------------+
+|            MainActivity                                                                          |
++--------------------------------------------------------------------------------------------------+
+| - distressButton: Button                                                                         |
+| - REQUEST_LOCATION_PERMISSION: int                                                               |
++--------------------------------------------------------------------------------------------------+
+| + onCreate(Bundle): void                                                                         |
+| + sendLocationToServer(): void                                                                   |
+| + onRequestPermissionsResult(requestCode: int, permissions: String[], grantResults: int[]): void |
+| + onClick(View): void                                                                            |
++--------------------------------------------------------------------------------------------------+
+
+
+ _____________________________________________________________________
+|                        RapidResponse                                |
+|_____________________________________________________________________|
+| - deviceName: String                                                |
+| - deviceLocation: Location                                          |
+| - serverURL: String                                                 |
+|_____________________________________________________________________|
+| + RapidResponse(deviceName: String, serverURL: String)              |
+| + sendLocationToServer(deviceName: String, deviceLocation: Location)|
+| + setDeviceName(name: String) : void                                |
+| + setServerURL(url: String) : void                                  |
+| + getDeviceName() : String                                          |
+| + getLastKnownLocation() : Location                                 |
+|_____________________________________________________________________|
