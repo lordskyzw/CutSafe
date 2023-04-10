@@ -17,7 +17,7 @@ Due to the recent attacks agaist students at my university and the coincidence t
 
 ## Installation and Setup
 
-1. Clone the repository to your local machine using `git clone https://github.com/yourusername/android-rapid-response-system.git`
+1. Clone the repository to your local machine using `git clone https://github.com/lordskyzw/cutsafe.git`
 2. Open the project in Android Studio
 3. Build the project and run it on an Android device or emulator
 4. Modify the `sendLocationToServer()` method in the client code to implement the logic for getting the device's last known location and sending it to the server
@@ -46,4 +46,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgements
 
-This project was inspired by the rise of robberies which CUT students are facing as the move on and around the campus. This called for the need for a rapid response system in emergency situations. Thanks to my group members for the support.
+This project was inspired by the rise of robberies (especially now that they occured to those close to me) which students are facing as they move on and around the campus. This calls for the need for a rapid response system in emergency situations. Thanks to my group members for the support.
