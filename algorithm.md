@@ -1,0 +1,7 @@
+    1. Initialize the app with a single activity that displays a button labeled "Distress".
+    2. When the user clicks the "Distress" button, the app will check if it has permission to access the device's location. If permission is not granted, the app will request permission from the user.
+    3. If permission is granted, the app will attempt to retrieve the device's current location. This may involve using a location provider such as GPS, WiFi or cellular networks.
+    4. Once the location has been retrieved, the app will create a network request to send the location to the server. This may involve using an HTTP client library such as Retrofit or Volley.
+    5. The server will receive the location and process it. The server may attempt to dispatch assistance to the location or log the location for future reference. The server may also send a response back to the app indicating whether assistance is being dispatched or not.
+    6. The app will receive the server's response and display a message to the user based on the response. If assistance is being dispatched, the app will display a message indicating that help is on the way. If assistance cannot be provided, the app will display a message indicating that help is not available.
+    7. If there is an error at any step of the process, the app will display a message to the user indicating that there was an error and try again.

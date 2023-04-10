@@ -1,0 +1,5 @@
+word-pseudocode of the client:
+we define a class whose constants are server address and device id (these are needed for identification of end user)
+we define a method of that class which returns device last known location as a string eg."123.456,-78.901" in longitude and latitude format
+it does so by interfacing GPS(googleplayservices' API) to get last registered location OR network services to maybe triangulate location
+this location is then sent to the server whose address is recorded as class constants(abstraction)
