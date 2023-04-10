@@ -1,0 +1,4 @@
+
+- Android SDK (version 23 or higher)
+- Android Studio (version 4.1 or higher)
+- Python (version 3.7 or higher) or Java (version 8 or higher) for the server-side code
