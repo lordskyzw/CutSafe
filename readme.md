@@ -42,10 +42,11 @@ Contributions to this project are welcome. To contribute, follow these steps:
 4. Push your changes to your forked repository
 5. Submit a pull request to the main repository
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
-This project was inspired by the rise of robberies (especially now that they occured to those close to me) which students are facing as they move on and around the campus. This calls for the need for a rapid response system in emergency situations. Thanks to my group members for the support.
+This project was inspired by the rise of robberies (especially now that they occured to those close to me) which students are facing as they move on and around the campus. This calls for the need for a rapid response system in emergency situations. Thanks to my group members for the support ie:
+
+1. TINAYEISHE CHIRINDA C21147680W
+2. Precious Makadho c21145681W
+3. Mashava Strive C21147540F
+4. Takudzwa Mukaro C21145793S
