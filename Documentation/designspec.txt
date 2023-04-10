@@ -1,0 +1,33 @@
+Design Specification for the Emergency Response App:
+
+    User Interface:
+
+    The app must have a simple, minimalistic and user-friendly interface.
+    The app should have an emergency button on the home screen that can be easily accessed in times of need.
+    The app must be able to communicate the location of the user accurately.
+
+    Notification System:
+
+    The app must be able to notify the university control room about the emergency automatically.
+    The notification should include the location of the user and other relevant information.
+    The notification should be sent via multiple channels, such as SMS, email, and push notifications.
+
+    Location Tracking:
+
+    The app should be able to track the location of the user in real-time.
+    The app must have a GPS tracking feature that can provide the accurate location of the user.
+
+    In-App Communication:
+
+    The app must have a chat or messaging feature that allows the user to communicate with the university control room or emergency services directly.
+    The in-app communication feature should be secure and encrypted.
+
+    Compatibility:
+
+    The app must be compatible with all major mobile operating systems, such as Android and iOS.
+    The app must be compatible with different types of devices, including smartphones and tablets.
+
+    Maintenance and Support:
+
+    The app must be maintained regularly and updated to ensure that it remains functional and relevant.
+    The app must have a support system in place to assist users with any issues they encounter.
