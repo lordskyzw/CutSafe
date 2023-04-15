@@ -2,7 +2,7 @@ import java.io.*;
 import java.net.*;
 
 public class RapidResponseSystem {
-    private static final String SERVER_URL = "http://example.com/api/location"; // Replace with your server URL
+    private static final String SERVER_URL = ""; // Replace with your server URL
     private static final String DEVICE_ID = "ABC123"; // Replace with your device ID
     
     public static void main(String[] args) {
@@ -21,10 +21,31 @@ public class RapidResponseSystem {
     //we also want cleaner debugging 
     
     private static String getLastKnownLocation() {
-        // Implement code to get device's last known location here
-        // For example, you could use the GPS or network location services
-        return "123.456,-78.901"; // Return a string in the format "latitude,longitude"
+   
+    LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+    // Check if network location provider is enabled
+    if (!locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+        return null;
     }
+
+    // Obtain the last known location from the network provider
+    Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+
+    // Check if location is available
+    if (location == null) {
+        return null;
+    }
+
+    // Extract latitude and longitude coordinates from the location object
+    double latitude = location.getLatitude();
+    double longitude = location.getLongitude();
+
+    // Return the location as a string
+    return String.format("%f,%f", latitude, longitude);
+}
+
+    
     
     private static void sendLocationToServer(String location) throws IOException {
         URL url = new URL(SERVER_URL);

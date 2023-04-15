@@ -1,3 +1,10 @@
+//1. Tarimica Chiwara C21145989W
+//2. TINAYEISHE CHIRINDA C21147680W
+//3. Precious Makadho c21145681W
+//4. Mashava Strive C21147540F
+//5. Takudzwa Mukaro C21145793S
+
+
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -34,7 +41,39 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void sendLocationToServer() {
-        // TODO: Implement the code to get the device's last known location and send it to the server
+        Location location = getLastKnownLocation();
+        if (location != null) {
+            try {
+                // Create a new HTTP connection
+                URL url = new URL(SERVER_URL);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("POST");
+                conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+                conn.setRequestProperty("Accept", "application/json");
+                conn.setDoOutput(true);
+
+                // Send the location data to the server
+                DataOutputStream out = new DataOutputStream(conn.getOutputStream());
+                out.writeBytes(String.format("{\"latitude\":%f,\"longitude\":%f}", location.getLatitude(), location.getLongitude()));
+                out.flush();
+                out.close();
+                
+                // Check the server response code
+                int responseCode = conn.getResponseCode();
+                if (responseCode != HttpURLConnection.HTTP_OK) {
+                    Log.e(TAG, "Server returned HTTP error code " + responseCode);
+                }
+                
+                // Close the connection
+                conn.disconnect();
+                
+            } catch (IOException e) {
+                Log.e(TAG, "Error sending location data to server", e);
+            }
+        } else {
+            Log.e(TAG, "No location data available");
+        }
+    
     }
 
     @Override
